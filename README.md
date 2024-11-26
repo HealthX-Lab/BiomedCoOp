@@ -1,4 +1,94 @@
-# BiomedCoOp
+# BiomedCoOp: Learning to Prompt for Biomedical Vision-Language Models
 **[Health-X Lab](http://www.healthx-lab.ca/)** | **[IMPACT Lab](https://users.encs.concordia.ca/~impact/)** 
 
 [Taha Koleilat](https://tahakoleilat.github.io/), [Hojat Asgariandehkordi](https://scholar.google.com/citations?user=ndXNye4AAAAJ&hl=en), [Hassan Rivaz](https://users.encs.concordia.ca/~hrivaz/), [Yiming Xiao](https://yimingxiao.weebly.com/curriculum-vitae.html)
+
+[![paper](https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg)](https://www.arxiv.org/abs/2409.19483)
+[![Overview](https://img.shields.io/badge/Overview-Read-blue.svg)](#overview)
+[![Datasets](https://img.shields.io/badge/Datasets-Access-yellow.svg)](#datasets)
+[![BibTeX](https://img.shields.io/badge/BibTeX-Cite-blueviolet.svg)](#citation)
+
+## Overview
+
+![main figure](assets/overview.png)
+> **<p align="justify"> Abstract:** *Recent advancements in vision-language models (VLMs), such as CLIP, have demonstrated substantial success in self-supervised representation learning for vision tasks. However, effectively adapting VLMs to downstream applications remains challenging, as their accuracy often depends on time-intensive and expertise-demanding prompt engineering, while full model fine-tuning is costly. This is particularly true for biomedical images, which, unlike natural images, typically suffer from limited annotated datasets, unintuitive image contrasts, and nuanced visual features. Recent prompt learning techniques, such as Context Optimization (CoOp) intend to tackle these issues, but still fall short in generalizability. Meanwhile, explorations in prompt learning for biomedical image analysis are still highly limited. In this work, we propose BiomedCoOp, a novel prompt learning framework that enables efficient adaptation of BiomedCLIP for accurate and highly generalizable few-shot biomedical image classification. Our approach achieves effective prompt context learning by leveraging semantic consistency with average prompt ensembles from Large Language Models (LLMs) and knowledge distillation with a statistics-based prompt selection strategy. We conducted comprehensive validation of our proposed framework on 11 medical datasets across 9 modalities and 10 organs against existing state-of-the-art methods, demonstrating significant improvements in both accuracy and generalizability.* </p>
+
+### Method
+
+<p float="left">
+  <img src="assets/BiomedCoOp.jpg" width="100%" />
+</p>
+
+1) **Semantic Consistency with LLM-Enhanced Prompt Ensembles**: Enhance context vector learning using prompt ensembles derived from GPT-4, combined with a knowledge distillation strategy to enforce semantic consistency.
+2) **Outlier Pruning for Robust Generalization**: Employ a statistics-based pruning strategy to filter outlier prompts from LLMs, mitigating over-specialization and preserving essential biomedical patterns.
+3) **First Adoption of BiomedCLIP for Prompt Learning**: Leverage BiomedCLIP for prompt learning for the first time, demonstrating superior performance over general knowledge CLIP in clinical tasks.
+4) **Extensive Multi-Modal Evaluation**: Evaluate across 11 biomedical image classification datasets, 9 modalities, and 10 organs, showcasing BiomedCoOp's superior generalizability and robustness in few-shot and base-to-novel benchmarks.
+
+## :ballot_box_with_check: Supported Methods
+
+[comment]: <> (| Language Prompting            | MaPLe |  [link]&#40;configs/trainers/IVLP/vit_b16_c2_ep5_batch4_4ctx_language_only.yaml&#41;      |      |)
+
+| Method                    | Paper                                         |                             Configs                             |          Training Scripts          |
+|---------------------------|:----------------------------------------------|:---------------------------------------------------------------:|:----------------------------------:|
+| MaPLe                     | [CVPR 2023](https://arxiv.org/abs/2210.03117)                                     | [link](configs/trainers/MaPLe/vit_b16_c2_ep5_batch4_2ctx.yaml)  |       [link](scripts/maple)        |
+| CoOp                      | [IJCV 2022](https://arxiv.org/abs/2109.01134) |                  [link](configs/trainers/CoOp)                  |        [link](scripts/coop)        |
+| Co-CoOp                   | [CVPR 2022](https://arxiv.org/abs/2203.05557) |                 [link](configs/trainers/CoCoOp)                 |       [link](scripts/cocoop)       |
+| Deep Vision Prompting     | -                                             |    [link](configs/trainers/VPT/vit_b16_c2_ep5_batch4_4.yaml)    |        [link](scripts/vpt)         |
+| Deep Language Prompting   | -                                             |                 [link](configs/trainers/IVLP/vit_b16_c2_ep5_batch4_4ctx_language_only.yaml)                  | [link](scripts/language-prompting) |
+| Independent V-L Prompting | -                                             | [link](configs/trainers/IVLP/vit_b16_c2_ep5_batch4_2+2ctx.yaml) |  [link](scripts/independent-vlp)   |
+
+<hr />
+
+## Results
+Results reported below show accuracy for few-shot scenarios as well as base and novel classes across 11 biomedical recognition datasets averaged over 3 seeds.
+### Few-shot Evaluation
+| **Method**             | $K=1$ | $K=2$ | $K=4$ | $K=8$ | $K=16$ |
+|-------------------------|:-------:|:-------:|:-------:|:-------:|:-------:|
+| [CLIP-Adapter](https://arxiv.org/abs/2110.04544)           |  44.66  |  43.91  |  44.36  |  45.42  |  46.69  |
+| [Tip-Adapter](https://arxiv.org/abs/2111.03930)            |  49.19  |  52.36  |  57.33  |  61.98  |  67.15  |
+| [Tip-Adapter-F](https://arxiv.org/abs/2111.03930)          |  51.17  |  52.74  |  61.23  |  65.91  |  70.91  |
+| [Standard LP](https://arxiv.org/abs/2103.00020)           |  47.25  |  54.21  |  61.00  |  65.85  |  69.40  |
+| [LP++](https://arxiv.org/abs/2404.02285)                   |  47.24  |  53.18  |  59.02  |  63.69  |  68.35  |
+| [CoOp](https://arxiv.org/abs/2109.01134)                  |  50.16  |  54.18  |  59.75  |  65.84  |  69.62  |
+| [CoCoOp](https://arxiv.org/abs/2203.05557)                |  48.49  |  51.28  |  54.69  |  61.08  |  65.09  |
+| [KgCoOp](https://arxiv.org/abs/2303.13283)                |  50.85  |  53.18  |  57.82  |  62.08  |  62.84  |
+| [ProGrad](https://arxiv.org/abs/2205.14865)               |  51.88  |  54.71  |  60.42  |  65.61  |  67.13  |
+| [**BiomedCoOp**](https://arxiv.org/abs/2411.15232)  | **57.03** | **59.13** | **63.95** | **68.32** | **72.42** |
+### Base-to-Novel Generalization
+| Name                                                      | Base Acc. | Novel Acc. |    HM     |  
+|-----------------------------------------------------------|:---------:|:----------:|:---------:|  
+| [BiomedCLIP](https://arxiv.org/abs/2303.00915)            |   47.84   |   65.42    |   53.81   |  
+| [CoOp](https://arxiv.org/abs/2109.01134)                  |   73.85   |   64.75    |   67.23   |  
+| [CoCoOp](https://arxiv.org/abs/2203.05557)                |   72.26   |   67.03    |   67.22   |  
+| [KgCoOp](https://arxiv.org/abs/2303.13283)                |   68.36   |   64.08    |   64.61   |  
+| [ProGrad](https://arxiv.org/abs/2205.14865)               |   71.67   |   66.93    |   67.43   |  
+| [**BiomedCoOp (ours)**](https://arxiv.org/abs/2411.15232) |   **76.26**   | **73.92**  | **75.07** |  
+
+## Installation 
+For installation and other package requirements, please follow the instructions detailed in [INSTALL.md](assets/INSTALL.md). 
+
+## Data preparation
+Please follow the instructions at [DATASETS.md](assets/DATASETS.md) to prepare all datasets.
+
+## Training and Evaluation
+Please refer to the [RUN.md](assets/RUN.md) for detailed instructions on training, evaluating and reproducing the results using our pre-trained models.
+
+<hr />
+
+## Citation
+If you use our work, please consider citing:
+```bibtex
+@misc{koleilat2024biomedcooplearningpromptbiomedical,
+      title={BiomedCoOp: Learning to Prompt for Biomedical Vision-Language Models}, 
+      author={Taha Koleilat and Hojat Asgariandehkordi and Hassan Rivaz and Yiming Xiao},
+      year={2024},
+      eprint={2411.15232},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2411.15232}, 
+}
+```
+
+## Acknowledgements
+
+Our code builds upon the [CoOp](https://github.com/KaiyangZhou/CoOp) and [MaPLe](https://github.com/muzairkhattak/multimodal-prompt-learning) repositories. We are grateful to the authors for making their code publicly available. If you use our model or code, we kindly request that you also consider citing these foundational works.
