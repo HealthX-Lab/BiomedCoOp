@@ -105,20 +105,28 @@ configs
 |–– datasets/
 |–– trainers/
 |   |–– BiomedCoOp/
+|   |–– CLIP_Adapter/
 |   |–– CoCoOp/
 |   |–– CoOp/
 |   |–– KgCoOp/
+|   |–– LP/
+|   |–– LP2/
 |   |–– ProGrad/
+|   |–– TiP_Adapter/
 |   |–– Zeroshot/
 ```
 
 ```
 scripts
 |–– biomedcoop/
+|–– clip_adapter/
 |–– cocoop/
 |–– coop/
 |–– kgcoop/
+|–– linear_probe/
+|–– linear_probe2/
 |–– prograd/
+|–– tip_adapter/
 |–– zeroshot/
 ```
 
