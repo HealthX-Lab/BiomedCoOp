@@ -1,0 +1,31 @@
+# ------ root_path/dataset_name ------
+root_path: '/mnt/data/' # '/mnt/data/' #Set the datasets path here
+output_dir: './results'
+
+# ------ Basic Config ------
+method: 'TIPAdapter' # 'ClipAdapter' 'LinearProbe'  'TIPAdapter' 'LinearProbe_alpha_GD_val' 'COOP'
+shots: 1
+tasks: 3
+backbone: 'ViT-B/16' # 'Vit-B/16' 'Vit-B/32' 'Vit-L/16' 'Vit-L/32'
+load_pre_feat: False # Set to True after first run
+clip_model: "BiomedCLIP" # 'BiomedCLIP' 'CLIP'
+
+# ------ Hyper Parameters ------
+lr: 0.001 
+train_epoch: 20 
+batch_size: 256
+
+# Tip_Adapter
+grid_search: True
+finetune: True # Whether to finetune or not for Tip-Adapter
+# ------ Load Cache and Features ------
+search_hp: True
+load_cache: False # Set to True after first run
+search_scale: [50, 50] 
+search_step: [200, 200]
+init_beta: 1
+init_alpha: 1 
+init_alpha_scale: 10
+augment_epoch: 1
+WARMUP_EPOCH: 1
+WARMUP_CONS_LR: 0.00001

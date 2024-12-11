@@ -1,0 +1,23 @@
+# ------ root_path/dataset_name ------
+root_path: '/mnt/data/' # '/mnt/data/' #Set the datasets path here
+output_dir: './results'
+
+# ------ Basic Config ------
+method: 'ClipAdapter'
+shots: 1
+tasks: 3
+backbone: 'ViT-B/16' # 'Vit-B/16' 'Vit-B/32' 'Vit-L/16' 'Vit-L/32'
+load_pre_feat: False # Set to True after first run
+clip_model: "BiomedCLIP" # 'BiomedCLIP' 'CLIP'
+
+
+# ------ Hyper Parameters ------
+lr: 0.01
+train_epoch: 20
+batch_size: 32
+WARMUP_EPOCH: 1
+WARMUP_CONS_LR: 0.00001
+search_alpha_ca: False
+alpha_ca: 0.5
+
+finetune: True # Whether to finetune or not

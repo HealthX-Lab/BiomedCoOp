@@ -1,0 +1,3908 @@
+{
+    "train": [
+        [
+            "benign_tumor/benign (1).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (101).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (102).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (103).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (104).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (106).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (107).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (108).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (110).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (111).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (112).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (116).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (118).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (12).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (122).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (124).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (125).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (126).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (127).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (13).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (130).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (132).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (134).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (137).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (138).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (139).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (14).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (142).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (145).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (146).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (148).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (15).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (151).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (153).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (155).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (157).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (158).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (159).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (16).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (162).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (164).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (167).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (170).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (174).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (177).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (178).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (179).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (183).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (184).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (185).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (186).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (188).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (190).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (192).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (193).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (195).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (196).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (197).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (199).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (2).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (20).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (200).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (202).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (203).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (204).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (206).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (212).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (214).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (215).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (216).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (217).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (219).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (220).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (222).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (223).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (226).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (228).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (229).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (230).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (231).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (232).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (233).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (234).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (237).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (24).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (240).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (241).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (242).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (244).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (245).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (247).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (252).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (254).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (255).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (256).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (258).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (261).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (263).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (267).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (269).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (27).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (273).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (274).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (277).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (28).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (281).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (282).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (283).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (285).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (287).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (289).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (291).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (292).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (296).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (298).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (310).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (312).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (313).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (314).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (316).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (317).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (318).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (319).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (323).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (326).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (330).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (331).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (332).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (333).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (334).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (335).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (336).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (338).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (342).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (344).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (348).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (350).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (351).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (353).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (354).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (355).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (356).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (358).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (359).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (36).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (361).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (363).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (364).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (366).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (367).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (37).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (371).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (372).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (373).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (374).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (375).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (378).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (38).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (380).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (381).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (383).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (385).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (386).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (387).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (388).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (39).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (390).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (391).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (393).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (394).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (396).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (399).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (400).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (402).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (409).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (410).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (412).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (414).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (416).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (417).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (418).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (423).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (424).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (426).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (43).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (431).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (433).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (434).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (435).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (437).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (45).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (46).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (47).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (48).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (5).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (51).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (52).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (53).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (54).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (59).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (64).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (65).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (67).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (71).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (73).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (74).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (75).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (79).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (81).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (86).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (89).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (9).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (90).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (91).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (93).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (94).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (95).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (99).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "malignant_tumor/malignant (1).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (100).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (102).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (103).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (104).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (105).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (108).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (11).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (110).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (111).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (114).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (12).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (121).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (122).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (123).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (125).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (126).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (128).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (129).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (131).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (132).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (134).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (138).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (14).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (140).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (141).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (144).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (145).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (148).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (149).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (15).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (152).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (155).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (157).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (158).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (160).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (161).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (162).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (165).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (166).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (167).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (168).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (17).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (172).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (173).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (176).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (177).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (179).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (181).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (184).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (19).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (190).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (191).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (192).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (193).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (195).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (197).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (201).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (206).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (208).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (209).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (23).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (26).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (27).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (28).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (29).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (31).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (34).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (35).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (37).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (39).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (4).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (40).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (43).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (46).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (47).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (48).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (5).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (53).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (56).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (58).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (59).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (61).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (63).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (67).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (7).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (70).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (72).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (73).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (74).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (76).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (77).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (78).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (83).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (84).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (86).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (87).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (89).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (9).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (90).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (92).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (93).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (94).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (96).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (97).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "normal_scan/normal (10).png",
+            2,
+            "normal scan"
+        ],
+        [
+            "normal_scan/normal (100).png",
+            2,
+            "normal scan"
+        ],
+        [
+            "normal_scan/normal (104).png",
+            2,
+            "normal scan"
+        ],
+        [
+            "normal_scan/normal (105).png",
+            2,
+            "normal scan"
+        ],
+        [
+            "normal_scan/normal (108).png",
+            2,
+            "normal scan"
+        ],
+        [
+            "normal_scan/normal (109).png",
+            2,
+            "normal scan"
+        ],
+        [
+            "normal_scan/normal (11).png",
+            2,
+            "normal scan"
+        ],
+        [
+            "normal_scan/normal (110).png",
+            2,
+            "normal scan"
+        ],
+        [
+            "normal_scan/normal (111).png",
+            2,
+            "normal scan"
+        ],
+        [
+            "normal_scan/normal (112).png",
+            2,
+            "normal scan"
+        ],
+        [
+            "normal_scan/normal (113).png",
+            2,
+            "normal scan"
+        ],
+        [
+            "normal_scan/normal (115).png",
+            2,
+            "normal scan"
+        ],
+        [
+            "normal_scan/normal (116).png",
+            2,
+            "normal scan"
+        ],
+        [
+            "normal_scan/normal (118).png",
+            2,
+            "normal scan"
+        ],
+        [
+            "normal_scan/normal (12).png",
+            2,
+            "normal scan"
+        ],
+        [
+            "normal_scan/normal (121).png",
+            2,
+            "normal scan"
+        ],
+        [
+            "normal_scan/normal (122).png",
+            2,
+            "normal scan"
+        ],
+        [
+            "normal_scan/normal (123).png",
+            2,
+            "normal scan"
+        ],
+        [
+            "normal_scan/normal (125).png",
+            2,
+            "normal scan"
+        ],
+        [
+            "normal_scan/normal (128).png",
+            2,
+            "normal scan"
+        ],
+        [
+            "normal_scan/normal (13).png",
+            2,
+            "normal scan"
+        ],
+        [
+            "normal_scan/normal (132).png",
+            2,
+            "normal scan"
+        ],
+        [
+            "normal_scan/normal (14).png",
+            2,
+            "normal scan"
+        ],
+        [
+            "normal_scan/normal (17).png",
+            2,
+            "normal scan"
+        ],
+        [
+            "normal_scan/normal (18).png",
+            2,
+            "normal scan"
+        ],
+        [
+            "normal_scan/normal (19).png",
+            2,
+            "normal scan"
+        ],
+        [
+            "normal_scan/normal (21).png",
+            2,
+            "normal scan"
+        ],
+        [
+            "normal_scan/normal (23).png",
+            2,
+            "normal scan"
+        ],
+        [
+            "normal_scan/normal (24).png",
+            2,
+            "normal scan"
+        ],
+        [
+            "normal_scan/normal (25).png",
+            2,
+            "normal scan"
+        ],
+        [
+            "normal_scan/normal (28).png",
+            2,
+            "normal scan"
+        ],
+        [
+            "normal_scan/normal (32).png",
+            2,
+            "normal scan"
+        ],
+        [
+            "normal_scan/normal (34).png",
+            2,
+            "normal scan"
+        ],
+        [
+            "normal_scan/normal (36).png",
+            2,
+            "normal scan"
+        ],
+        [
+            "normal_scan/normal (38).png",
+            2,
+            "normal scan"
+        ],
+        [
+            "normal_scan/normal (41).png",
+            2,
+            "normal scan"
+        ],
+        [
+            "normal_scan/normal (43).png",
+            2,
+            "normal scan"
+        ],
+        [
+            "normal_scan/normal (44).png",
+            2,
+            "normal scan"
+        ],
+        [
+            "normal_scan/normal (45).png",
+            2,
+            "normal scan"
+        ],
+        [
+            "normal_scan/normal (47).png",
+            2,
+            "normal scan"
+        ],
+        [
+            "normal_scan/normal (48).png",
+            2,
+            "normal scan"
+        ],
+        [
+            "normal_scan/normal (50).png",
+            2,
+            "normal scan"
+        ],
+        [
+            "normal_scan/normal (52).png",
+            2,
+            "normal scan"
+        ],
+        [
+            "normal_scan/normal (53).png",
+            2,
+            "normal scan"
+        ],
+        [
+            "normal_scan/normal (56).png",
+            2,
+            "normal scan"
+        ],
+        [
+            "normal_scan/normal (59).png",
+            2,
+            "normal scan"
+        ],
+        [
+            "normal_scan/normal (6).png",
+            2,
+            "normal scan"
+        ],
+        [
+            "normal_scan/normal (60).png",
+            2,
+            "normal scan"
+        ],
+        [
+            "normal_scan/normal (61).png",
+            2,
+            "normal scan"
+        ],
+        [
+            "normal_scan/normal (62).png",
+            2,
+            "normal scan"
+        ],
+        [
+            "normal_scan/normal (64).png",
+            2,
+            "normal scan"
+        ],
+        [
+            "normal_scan/normal (67).png",
+            2,
+            "normal scan"
+        ],
+        [
+            "normal_scan/normal (69).png",
+            2,
+            "normal scan"
+        ],
+        [
+            "normal_scan/normal (7).png",
+            2,
+            "normal scan"
+        ],
+        [
+            "normal_scan/normal (71).png",
+            2,
+            "normal scan"
+        ],
+        [
+            "normal_scan/normal (76).png",
+            2,
+            "normal scan"
+        ],
+        [
+            "normal_scan/normal (77).png",
+            2,
+            "normal scan"
+        ],
+        [
+            "normal_scan/normal (82).png",
+            2,
+            "normal scan"
+        ],
+        [
+            "normal_scan/normal (83).png",
+            2,
+            "normal scan"
+        ],
+        [
+            "normal_scan/normal (85).png",
+            2,
+            "normal scan"
+        ],
+        [
+            "normal_scan/normal (9).png",
+            2,
+            "normal scan"
+        ],
+        [
+            "normal_scan/normal (91).png",
+            2,
+            "normal scan"
+        ],
+        [
+            "normal_scan/normal (93).png",
+            2,
+            "normal scan"
+        ],
+        [
+            "normal_scan/normal (94).png",
+            2,
+            "normal scan"
+        ],
+        [
+            "normal_scan/normal (96).png",
+            2,
+            "normal scan"
+        ],
+        [
+            "normal_scan/normal (97).png",
+            2,
+            "normal scan"
+        ]
+    ],
+    "val": [
+        [
+            "benign_tumor/benign (10).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (109).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (11).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (117).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (120).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (121).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (123).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (128).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (140).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (141).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (144).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (147).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (149).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (152).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (156).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (161).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (166).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (169).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (17).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (182).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (19).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (191).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (198).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (205).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (208).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (218).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (235).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (236).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (248).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (250).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (253).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (257).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (260).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (264).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (270).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (278).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (280).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (284).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (288).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (294).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (295).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (300).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (303).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (307).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (308).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (31).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (320).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (322).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (329).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (337).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (341).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (343).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (347).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (349).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (357).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (370).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (389).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (392).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (395).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (397).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (398).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (4).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (404).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (405).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (407).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (408).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (411).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (413).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (419).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (420).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (421).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (422).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (427).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (428).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (429).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (432).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (436).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (44).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (50).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (58).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (61).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (70).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (72).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (76).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (83).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (92).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (97).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "malignant_tumor/malignant (107).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (112).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (115).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (117).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (118).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (119).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (120).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (124).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (127).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (133).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (137).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (142).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (147).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (151).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (159).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (170).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (175).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (178).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (18).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (185).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (188).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (189).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (194).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (199).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (200).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (204).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (210).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (24).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (30).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (32).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (38).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (45).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (50).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (52).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (54).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (55).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (57).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (75).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (79).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (88).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (95).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (99).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "normal_scan/normal (1).png",
+            2,
+            "normal scan"
+        ],
+        [
+            "normal_scan/normal (120).png",
+            2,
+            "normal scan"
+        ],
+        [
+            "normal_scan/normal (124).png",
+            2,
+            "normal scan"
+        ],
+        [
+            "normal_scan/normal (15).png",
+            2,
+            "normal scan"
+        ],
+        [
+            "normal_scan/normal (29).png",
+            2,
+            "normal scan"
+        ],
+        [
+            "normal_scan/normal (30).png",
+            2,
+            "normal scan"
+        ],
+        [
+            "normal_scan/normal (33).png",
+            2,
+            "normal scan"
+        ],
+        [
+            "normal_scan/normal (37).png",
+            2,
+            "normal scan"
+        ],
+        [
+            "normal_scan/normal (4).png",
+            2,
+            "normal scan"
+        ],
+        [
+            "normal_scan/normal (40).png",
+            2,
+            "normal scan"
+        ],
+        [
+            "normal_scan/normal (42).png",
+            2,
+            "normal scan"
+        ],
+        [
+            "normal_scan/normal (46).png",
+            2,
+            "normal scan"
+        ],
+        [
+            "normal_scan/normal (5).png",
+            2,
+            "normal scan"
+        ],
+        [
+            "normal_scan/normal (51).png",
+            2,
+            "normal scan"
+        ],
+        [
+            "normal_scan/normal (63).png",
+            2,
+            "normal scan"
+        ],
+        [
+            "normal_scan/normal (66).png",
+            2,
+            "normal scan"
+        ],
+        [
+            "normal_scan/normal (68).png",
+            2,
+            "normal scan"
+        ],
+        [
+            "normal_scan/normal (75).png",
+            2,
+            "normal scan"
+        ],
+        [
+            "normal_scan/normal (8).png",
+            2,
+            "normal scan"
+        ],
+        [
+            "normal_scan/normal (81).png",
+            2,
+            "normal scan"
+        ],
+        [
+            "normal_scan/normal (84).png",
+            2,
+            "normal scan"
+        ],
+        [
+            "normal_scan/normal (87).png",
+            2,
+            "normal scan"
+        ],
+        [
+            "normal_scan/normal (88).png",
+            2,
+            "normal scan"
+        ],
+        [
+            "normal_scan/normal (89).png",
+            2,
+            "normal scan"
+        ],
+        [
+            "normal_scan/normal (95).png",
+            2,
+            "normal scan"
+        ],
+        [
+            "normal_scan/normal (99).png",
+            2,
+            "normal scan"
+        ]
+    ],
+    "test": [
+        [
+            "benign_tumor/benign (100).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (105).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (113).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (114).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (115).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (119).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (129).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (131).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (133).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (135).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (136).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (143).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (150).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (154).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (160).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (163).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (165).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (168).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (171).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (172).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (173).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (175).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (176).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (18).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (180).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (181).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (187).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (189).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (194).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (201).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (207).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (209).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (21).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (210).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (211).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (213).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (22).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (221).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (224).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (225).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (227).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (23).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (238).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (239).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (243).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (246).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (249).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (25).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (251).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (259).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (26).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (262).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (265).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (266).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (268).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (271).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (272).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (275).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (276).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (279).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (286).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (29).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (290).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (293).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (297).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (299).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (3).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (30).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (301).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (302).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (304).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (305).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (306).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (309).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (311).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (315).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (32).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (321).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (324).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (325).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (327).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (328).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (33).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (339).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (34).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (340).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (345).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (346).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (35).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (352).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (360).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (362).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (365).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (368).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (369).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (376).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (377).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (379).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (382).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (384).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (40).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (401).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (403).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (406).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (41).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (415).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (42).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (425).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (430).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (49).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (55).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (56).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (57).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (6).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (60).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (62).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (63).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (66).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (68).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (69).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (7).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (77).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (78).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (8).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (80).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (82).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (84).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (85).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (87).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (88).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (96).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "benign_tumor/benign (98).png",
+            0,
+            "benign tumor"
+        ],
+        [
+            "malignant_tumor/malignant (10).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (101).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (106).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (109).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (113).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (116).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (13).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (130).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (135).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (136).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (139).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (143).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (146).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (150).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (153).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (154).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (156).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (16).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (163).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (164).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (169).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (171).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (174).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (180).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (182).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (183).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (186).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (187).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (196).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (198).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (2).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (20).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (202).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (203).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (205).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (207).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (21).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (22).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (25).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (3).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (33).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (36).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (41).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (42).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (44).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (49).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (51).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (6).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (60).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (62).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (64).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (65).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (66).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (68).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (69).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (71).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (8).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (80).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (81).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (82).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (85).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (91).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "malignant_tumor/malignant (98).png",
+            1,
+            "malignant tumor"
+        ],
+        [
+            "normal_scan/normal (101).png",
+            2,
+            "normal scan"
+        ],
+        [
+            "normal_scan/normal (102).png",
+            2,
+            "normal scan"
+        ],
+        [
+            "normal_scan/normal (103).png",
+            2,
+            "normal scan"
+        ],
+        [
+            "normal_scan/normal (106).png",
+            2,
+            "normal scan"
+        ],
+        [
+            "normal_scan/normal (107).png",
+            2,
+            "normal scan"
+        ],
+        [
+            "normal_scan/normal (114).png",
+            2,
+            "normal scan"
+        ],
+        [
+            "normal_scan/normal (117).png",
+            2,
+            "normal scan"
+        ],
+        [
+            "normal_scan/normal (119).png",
+            2,
+            "normal scan"
+        ],
+        [
+            "normal_scan/normal (126).png",
+            2,
+            "normal scan"
+        ],
+        [
+            "normal_scan/normal (127).png",
+            2,
+            "normal scan"
+        ],
+        [
+            "normal_scan/normal (129).png",
+            2,
+            "normal scan"
+        ],
+        [
+            "normal_scan/normal (130).png",
+            2,
+            "normal scan"
+        ],
+        [
+            "normal_scan/normal (131).png",
+            2,
+            "normal scan"
+        ],
+        [
+            "normal_scan/normal (133).png",
+            2,
+            "normal scan"
+        ],
+        [
+            "normal_scan/normal (16).png",
+            2,
+            "normal scan"
+        ],
+        [
+            "normal_scan/normal (2).png",
+            2,
+            "normal scan"
+        ],
+        [
+            "normal_scan/normal (20).png",
+            2,
+            "normal scan"
+        ],
+        [
+            "normal_scan/normal (22).png",
+            2,
+            "normal scan"
+        ],
+        [
+            "normal_scan/normal (26).png",
+            2,
+            "normal scan"
+        ],
+        [
+            "normal_scan/normal (27).png",
+            2,
+            "normal scan"
+        ],
+        [
+            "normal_scan/normal (3).png",
+            2,
+            "normal scan"
+        ],
+        [
+            "normal_scan/normal (31).png",
+            2,
+            "normal scan"
+        ],
+        [
+            "normal_scan/normal (35).png",
+            2,
+            "normal scan"
+        ],
+        [
+            "normal_scan/normal (39).png",
+            2,
+            "normal scan"
+        ],
+        [
+            "normal_scan/normal (49).png",
+            2,
+            "normal scan"
+        ],
+        [
+            "normal_scan/normal (54).png",
+            2,
+            "normal scan"
+        ],
+        [
+            "normal_scan/normal (55).png",
+            2,
+            "normal scan"
+        ],
+        [
+            "normal_scan/normal (57).png",
+            2,
+            "normal scan"
+        ],
+        [
+            "normal_scan/normal (58).png",
+            2,
+            "normal scan"
+        ],
+        [
+            "normal_scan/normal (65).png",
+            2,
+            "normal scan"
+        ],
+        [
+            "normal_scan/normal (70).png",
+            2,
+            "normal scan"
+        ],
+        [
+            "normal_scan/normal (72).png",
+            2,
+            "normal scan"
+        ],
+        [
+            "normal_scan/normal (73).png",
+            2,
+            "normal scan"
+        ],
+        [
+            "normal_scan/normal (74).png",
+            2,
+            "normal scan"
+        ],
+        [
+            "normal_scan/normal (78).png",
+            2,
+            "normal scan"
+        ],
+        [
+            "normal_scan/normal (79).png",
+            2,
+            "normal scan"
+        ],
+        [
+            "normal_scan/normal (80).png",
+            2,
+            "normal scan"
+        ],
+        [
+            "normal_scan/normal (86).png",
+            2,
+            "normal scan"
+        ],
+        [
+            "normal_scan/normal (90).png",
+            2,
+            "normal scan"
+        ],
+        [
+            "normal_scan/normal (92).png",
+            2,
+            "normal scan"
+        ],
+        [
+            "normal_scan/normal (98).png",
+            2,
+            "normal scan"
+        ]
+    ]
+}

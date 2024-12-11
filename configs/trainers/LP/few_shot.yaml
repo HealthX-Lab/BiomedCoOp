@@ -1,0 +1,20 @@
+# ------ root_path/dataset_name ------
+root_path: '/mnt/data/' # '/mnt/data/' #Set the datasets path here
+output_dir: './results'
+
+# ------ Basic Config ------
+method: 'LinearProbe' 
+shots: 1
+tasks: 3
+backbone: 'ViT-B/16' # 'Vit-B/16' 'Vit-B/32' 'Vit-L/16' 'Vit-L/32'
+load_pre_feat: False # Set to True after first run
+clip_model: "BiomedCLIP" # 'BiomedCLIP' 'CLIP'
+
+
+# ------ Hyper Parameters ------
+lr: 0.001
+train_epoch: 300 
+batch_size: 256
+num_step: 8
+
+finetune: True # Whether to finetune or not

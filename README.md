@@ -3,7 +3,7 @@
 
 [Taha Koleilat](https://tahakoleilat.github.io/), [Hojat Asgariandehkordi](https://scholar.google.com/citations?user=ndXNye4AAAAJ&hl=en), [Hassan Rivaz](https://users.encs.concordia.ca/~hrivaz/), [Yiming Xiao](https://yimingxiao.weebly.com/curriculum-vitae.html)
 
-[![paper](https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg)](https://www.arxiv.org/abs/2409.19483)
+[![paper](https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg)](https://arxiv.org/abs/2411.15232)
 [![Overview](https://img.shields.io/badge/Overview-Read-blue.svg)](#overview)
 [![Datasets](https://img.shields.io/badge/Datasets-Access-yellow.svg)](#datasets)
 [![BibTeX](https://img.shields.io/badge/BibTeX-Cite-blueviolet.svg)](#citation)
@@ -13,7 +13,7 @@
 ![main figure](assets/overview.png)
 > **<p align="justify"> Abstract:** *Recent advancements in vision-language models (VLMs), such as CLIP, have demonstrated substantial success in self-supervised representation learning for vision tasks. However, effectively adapting VLMs to downstream applications remains challenging, as their accuracy often depends on time-intensive and expertise-demanding prompt engineering, while full model fine-tuning is costly. This is particularly true for biomedical images, which, unlike natural images, typically suffer from limited annotated datasets, unintuitive image contrasts, and nuanced visual features. Recent prompt learning techniques, such as Context Optimization (CoOp) intend to tackle these issues, but still fall short in generalizability. Meanwhile, explorations in prompt learning for biomedical image analysis are still highly limited. In this work, we propose BiomedCoOp, a novel prompt learning framework that enables efficient adaptation of BiomedCLIP for accurate and highly generalizable few-shot biomedical image classification. Our approach achieves effective prompt context learning by leveraging semantic consistency with average prompt ensembles from Large Language Models (LLMs) and knowledge distillation with a statistics-based prompt selection strategy. We conducted comprehensive validation of our proposed framework on 11 medical datasets across 9 modalities and 10 organs against existing state-of-the-art methods, demonstrating significant improvements in both accuracy and generalizability.* </p>
 
-### Method
+## Method
 
 <p float="left">
   <img src="assets/BiomedCoOp.jpg" width="100%" />
@@ -26,16 +26,18 @@
 
 ## :ballot_box_with_check: Supported Methods
 
-[comment]: <> (| Language Prompting            | MaPLe |  [link]&#40;configs/trainers/IVLP/vit_b16_c2_ep5_batch4_4ctx_language_only.yaml&#41;      |      |)
-
 | Method                    | Paper                                         |                             Configs                             |          Training Scripts          |
 |---------------------------|:----------------------------------------------|:---------------------------------------------------------------:|:----------------------------------:|
-| MaPLe                     | [CVPR 2023](https://arxiv.org/abs/2210.03117)                                     | [link](configs/trainers/MaPLe/vit_b16_c2_ep5_batch4_2ctx.yaml)  |       [link](scripts/maple)        |
+| BiomedCoOp                     | [TBA](https://arxiv.org/abs/2411.15232)                                     | [link](configs/trainers/BiomedCoOp)  |       [link](scripts/biomedcoop)        |
+| CLIP                     | [ICML 2021](https://arxiv.org/abs/2103.00020)                                     | [link](configs/trainers/Zeroshot)  |       [link](scripts/zeroshot)        |
 | CoOp                      | [IJCV 2022](https://arxiv.org/abs/2109.01134) |                  [link](configs/trainers/CoOp)                  |        [link](scripts/coop)        |
-| Co-CoOp                   | [CVPR 2022](https://arxiv.org/abs/2203.05557) |                 [link](configs/trainers/CoCoOp)                 |       [link](scripts/cocoop)       |
-| Deep Vision Prompting     | -                                             |    [link](configs/trainers/VPT/vit_b16_c2_ep5_batch4_4.yaml)    |        [link](scripts/vpt)         |
-| Deep Language Prompting   | -                                             |                 [link](configs/trainers/IVLP/vit_b16_c2_ep5_batch4_4ctx_language_only.yaml)                  | [link](scripts/language-prompting) |
-| Independent V-L Prompting | -                                             | [link](configs/trainers/IVLP/vit_b16_c2_ep5_batch4_2+2ctx.yaml) |  [link](scripts/independent-vlp)   |
+| CoCoOp                   | [CVPR 2022](https://arxiv.org/abs/2203.05557) |                 [link](configs/trainers/CoCoOp)                 |       [link](scripts/cocoop)       |
+| KgCoOp     | [CVPR 2023](https://arxiv.org/abs/2303.13283)                                            |    [link](configs/trainers/KgCoOp)    |        [link](scripts/kgcoop)         |
+| ProGrad     | [ICCV 2023](https://arxiv.org/abs/2205.14865)                                            |    [link](configs/trainers/ProGrad)    |        [link](scripts/prograd)         |
+| CLIP-Adapter    | [IJCV 2024](https://arxiv.org/abs/2110.04544)                                            |    [link](configs/trainers/CLIP_Adapter)    |        [link](scripts/clip_adapter)         |
+| Tip-Adapter    | [ECCV 2022](https://arxiv.org/abs/2111.03930)                                            |    [link](configs/trainers/TiP_Adapter)    |        [link](scripts/tip_adapter)         |
+| LP   | [ICML 2021](https://arxiv.org/abs/2103.00020)                                            |    [link](configs/trainers/LP)    |        [link](scripts/linear_probe)         |
+| LP++   | [CVPR 2024](https://arxiv.org/abs/2404.02285)                                            |    [link](configs/trainers/LP2)    |        [link](scripts/linear_probe2)         |
 
 <hr />
 

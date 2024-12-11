@@ -1,0 +1,19 @@
+# ------ root_path/dataset_name ------
+root_path: '/mnt/data/' # '/mnt/data/' #Set the datasets path here
+output_dir: './results'
+
+# ------ Basic Config ------
+method: 'LinearProbe_P2' 
+shots: 1
+tasks: 3
+backbone: 'ViT-B/16' # 'Vit-B/16' 'Vit-B/32' 'Vit-L/16' 'Vit-L/32'
+load_pre_feat: False # Set to True after first run
+clip_model: "BiomedCLIP" # 'BiomedCLIP' 'CLIP'
+
+# ------ Hyper Parameters ------
+lr: 0.001 # 0.001 for Tip Adapter, COOP 0.002, Clipadapter 0.01
+train_epoch: 300 # tip adapter: 20, Coop: 200 , linear-Probe: 300
+batch_size: 256 # 32 clip adaper , 256 tip adapter & ours , 32 Coop
+num_step: 8
+
+finetune: True # Whether to finetune or not
