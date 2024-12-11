@@ -5,7 +5,7 @@ DATA=$1
 DATASET=$2
 MODEL=$3
 METHOD=Zeroshot
-TRAINER=Zeroshot${MODEL}
+TRAINER=Zeroshot${MODEL}2
 
 CFG=vit_b16_base2new
 SUB_base=base

@@ -2,8 +2,8 @@ CFG=vit_b16
 DATA=$1
 DATASET=$2
 MODEL=$3
-METHOD=Zeroshot2
-TRAINER=Zeroshot2${MODEL}
+METHOD=Zeroshot
+TRAINER=Zeroshot${MODEL}2
 
 python train.py \
 --root ${DATA} \

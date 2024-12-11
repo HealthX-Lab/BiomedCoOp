@@ -41,10 +41,50 @@ import trainers.biomedcoop_pubmedclip
 import trainers.biomedcoop_pmcclip
 
 
+def print_args(args, cfg):
+    print("***************")
+    print("** Arguments **")
+    print("***************")
+    optkeys = list(args.__dict__.keys())
+    optkeys.sort()
+    for key in optkeys:
+        print("{}: {}".format(key, args.__dict__[key]))
+    print("************")
+    print("** Config **")
+    print("************")
+    print(cfg)
+
 
 def reset_cfg(cfg, args):
     if args.root:
         cfg.DATASET.ROOT = args.root
+
+    if args.output_dir:
+        cfg.OUTPUT_DIR = args.output_dir
+
+    if args.resume:
+        cfg.RESUME = args.resume
+
+    if args.seed:
+        cfg.SEED = args.seed
+
+    if args.source_domains:
+        cfg.DATASET.SOURCE_DOMAINS = args.source_domains
+
+    if args.target_domains:
+        cfg.DATASET.TARGET_DOMAINS = args.target_domains
+
+    if args.transforms:
+        cfg.INPUT.TRANSFORMS = args.transforms
+
+    if args.trainer:
+        cfg.TRAINER.NAME = args.trainer
+
+    if args.backbone:
+        cfg.MODEL.BACKBONE.NAME = args.backbone
+
+    if args.head:
+        cfg.MODEL.HEAD.NAME = args.head
 
 
 
@@ -138,6 +178,20 @@ def main(args):
         set_random_seed(cfg.SEED)
     setup_logger(cfg.OUTPUT_DIR)
 
+    if torch.cuda.is_available() and cfg.USE_CUDA:
+        torch.backends.cudnn.benchmark = True
+
+    print_args(args, cfg)
+    print("Collecting env info ...")
+    print("** System info **\n{}\n".format(collect_env_info()))
+
+    trainer = build_trainer(cfg)
+    print("Trainer built successfully.")
+
+    if args.eval_only:
+        trainer.load_model(args.model_dir, epoch=args.load_epoch)
+        trainer.test()
+        return
 
     if not args.no_train:
         trainer.train()
