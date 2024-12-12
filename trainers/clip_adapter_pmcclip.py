@@ -12,7 +12,7 @@ from .utils import cls_acc
 
 from torch.optim.lr_scheduler import _LRScheduler
 
-class ClipAdapter_CLIP(FSCLIPmethod):
+class ClipAdapter_PMCCLIP(FSCLIPmethod):
     '''
     CLIP Adapter method
         @article{gao2021clip,
@@ -164,7 +164,7 @@ class ClipAdapter_CLIP(FSCLIPmethod):
                 torch.save(clip_ad_model.adapter, self.cfg['cache_dir'] + "/best_clipA_" + str(self.cfg['shots']) + "shots.pt")
         # Evaluation
         print("Total time = {:.4f}".format(time.time()-start_time))
-        clip_ad_model.adapter = torch.load(self.cfg['cache_dir'] + "/best_clipA_" + str(self.cfg['shots']) + "shots.pt")
+        # clip_ad_model.adapter = torch.load(self.cfg['cache_dir'] + "/best_clipA_" + str(self.cfg['shots']) + "shots.pt")
         
         print('\nStart evaluation on test set')
         clip_ad_model.eval()
@@ -238,8 +238,8 @@ class CustomCLIP(nn.Module):
         super().__init__()
         self.image_encoder = clip_model.visual
         self.logit_scale = clip_model.logit_scale
-        self.dtype = clip_model.dtype
-        self.adapter = Adapter(512, 4).to(clip_model.dtype)
+        self.dtype = torch.float32
+        self.adapter = Adapter(512, 4).to(torch.float32)
 
             
     def forward(self, image_features, text_features, alpha):

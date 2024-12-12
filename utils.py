@@ -15,7 +15,11 @@ import numpy as np
 
 import clip
 
+from transformers import AutoTokenizer
+
 tokenizer = get_tokenizer('hf-hub:microsoft/BiomedCLIP-PubMedBERT_256-vit_base_patch16_224')
+
+pmcclip_tokenizer = AutoTokenizer.from_pretrained('microsoft/BiomedNLP-BiomedBERT-base-uncased-abstract')
 
 def warp_tqdm(data_loader, disable_tqdm):
     if disable_tqdm:
@@ -66,6 +70,24 @@ def biomedclip_classifier(classnames, template, clip_model):
             # texts = clip.tokenize(texts).cuda()
             texts = tokenizer(texts).cuda()
             # prompt ensemble for ImageNet
+            class_embeddings = clip_model.encode_text(texts)
+            class_embeddings /= class_embeddings.norm(dim=-1, keepdim=True)
+            class_embedding = class_embeddings.mean(dim=0)
+            class_embedding /= class_embedding.norm()
+            clip_weights.append(class_embedding)
+
+        clip_weights = torch.stack(clip_weights, dim=1).cuda()
+    return clip_weights
+
+def pmcclip_classifier(classnames, template, clip_model):
+    with torch.no_grad():
+        clip_weights = []
+
+        for classname in classnames:
+            # Tokenize the prompts
+            classname = classname.replace('_', ' ')
+            texts = [t.format(classname) for t in template]
+            texts = pmcclip_tokenizer(texts, padding='max_length', truncation=True, max_length=77, return_tensors='pt')
             class_embeddings = clip_model.encode_text(texts)
             class_embeddings /= class_embeddings.norm(dim=-1, keepdim=True)
             class_embedding = class_embeddings.mean(dim=0)

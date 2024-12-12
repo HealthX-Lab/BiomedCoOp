@@ -63,10 +63,10 @@ def load_clip_to_cpu(cfg):
         state_dict = None
 
     except RuntimeError:
-        state_dict = torch.load(model_path, map_location="cpu")
+        state_dict = torch.load(model_path, map_location="cpu", weights_only=True)
 
     model = clip.build_model(state_dict or model.state_dict())
-    checkpoint = torch.load(os.path.join(directory,"PubMedCLIP_ViT32.pth"))
+    checkpoint = torch.load(os.path.join(directory,"PubMedCLIP_ViT32.pth"), weights_only=True)
     model.load_state_dict(checkpoint['state_dict'])
 
     return model
@@ -230,15 +230,6 @@ class CLIP(nn.Module):
     def __init__(self, cfg, classnames):
         super().__init__()
 
-        # Check for files in the directory and download if necessary
-        for filename, url in files.items():
-            filepath = os.path.join(directory, filename)
-            if not os.path.exists(filepath):
-                print(f"{filename} not found in {directory}. Downloading...")
-                download_file(url, filepath)
-            else:
-                print(f"{filename} already exists in {directory}.")
-
         print(f"Loading PubMedCLIP (backbone: ViT-B/32)")
         clip_model = load_clip_to_cpu(cfg)
         clip_model.float()
@@ -323,6 +314,15 @@ class ProGrad_PubMedCLIP(TrainerX):
     def build_model(self):
         cfg = self.cfg
         classnames = self.dm.dataset.classnames
+
+        # Check for files in the directory and download if necessary
+        for filename, url in files.items():
+            filepath = os.path.join(directory, filename)
+            if not os.path.exists(filepath):
+                print(f"{filename} not found in {directory}. Downloading...")
+                download_file(url, filepath)
+            else:
+                print(f"{filename} already exists in {directory}.")
 
         print(f"Loading PubMedCLIP (backbone: ViT-B/32)")
         clip_model = load_clip_to_cpu(cfg)

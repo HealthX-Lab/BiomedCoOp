@@ -5,6 +5,7 @@ import yaml
 import time
 import pandas as pd
 from tqdm import tqdm
+import requests
 
 import torch
 import torch.nn.functional as F
@@ -17,6 +18,40 @@ import clip
 from trainers import __dict__ as all_methods
 from utils import *
 from open_clip.src.open_clip import create_model_from_pretrained
+
+from clip.pmcclip import ModifiedResNet, image_transform
+
+from transformers import AutoTokenizer, AutoModel
+
+directory = "clip/checkpoints"
+
+# File URLs
+pubmedclip_files = {
+    "PubMedCLIP_ViT32.pth": "https://huggingface.co/sarahESL/PubMedCLIP/resolve/main/PubMedCLIP_ViT32.pth?download=true",
+}
+
+# File URLs
+pmcclip_files = {
+    "text_encoder.pth": "https://huggingface.co/datasets/axiong/pmc_oa/resolve/main/text_encoder.pth",
+    "image_encoder(resnet50).pth": "https://huggingface.co/datasets/axiong/pmc_oa/resolve/main/image_encoder(resnet50).pth",
+    "text_projection_layer.pth": "https://huggingface.co/datasets/axiong/pmc_oa/resolve/main/text_projection_layer.pth",
+}
+
+# Function to download a file with a progress bar
+def download_file(url, filepath):
+    print(f"Downloading {filepath}...")
+    response = requests.get(url, stream=True)
+    if response.status_code == 200:
+        total_size = int(response.headers.get('content-length', 0))
+        with open(filepath, "wb") as file:
+            # Use tqdm to show the progress bar
+            with tqdm(total=total_size, unit='B', unit_scale=True, desc=filepath) as pbar:
+                for chunk in response.iter_content(chunk_size=1024):
+                    file.write(chunk)
+                    pbar.update(len(chunk))  # Update progress bar by the chunk size
+        print(f"{filepath} downloaded successfully.")
+    else:
+        print(f"Failed to download {filepath}. HTTP Status Code: {response.status_code}")
 
 
 def get_arguments():
@@ -37,7 +72,38 @@ def get_arguments():
         cfg = merge_cfg_from_list(cfg, args.opts)
     return cfg
 
+class PMCCLIP(nn.Module):
+    def __init__(self,image_encoder, text_encoder, projection_layer):
+        super().__init__()
+        self.image_encoder = image_encoder
+        self.text_encoder = text_encoder
+        self.text_projection_layer = projection_layer
+        self.logit_scale = 4.4292
+        self.tokenizer = AutoTokenizer.from_pretrained('microsoft/BiomedNLP-BiomedBERT-base-uncased-abstract')
+    def forward(self,image,text):
+        encoded_input = self.tokenizer(text, padding='max_length', truncation=True, max_length=77, return_tensors='pt')
+        input_ids = encoded_input['input_ids']
+        text_feature = self.text_encoder(input_ids)
+        last_hidden_state = text_feature.last_hidden_state
+        pooler_output = text_feature.pooler_output
+        text_feature = pooler_output @ self.text_projection_layer
+        image_feature = self.image_encoder(image)
+        if isinstance(image_feature, dict):
+            image_feature = image_feature['image_features']
 
+        return image_feature, text_feature
+    
+    def encode_text(self, text):
+        text_feature = self.text_encoder(text['input_ids'].cuda(), attention_mask=text['attention_mask'].cuda())
+        pooler_output = text_feature.pooler_output
+        text_feature = pooler_output @ self.text_projection_layer
+        return text_feature
+    
+    def encode_image(self, image):
+        image_feature = self.image_encoder(image)
+        if isinstance(image_feature, dict):
+            image_feature = image_feature['image_features']
+        return image_feature
 
 def main():
 
@@ -58,6 +124,51 @@ def main():
     if(clip_model_pretrained == 'CLIP'):
         clip_model, preprocess = clip.load(cfg['backbone'])
         clip_model.eval()
+
+    elif(clip_model_pretrained == 'PubMedCLIP'):
+        # Check for files in the directory and download if necessary
+        for filename, url in pubmedclip_files.items():
+            filepath = os.path.join(directory, filename)
+            if not os.path.exists(filepath):
+                print(f"{filename} not found in {directory}. Downloading...")
+                download_file(url, filepath)
+            else:
+                print(f"{filename} already exists in {directory}.")
+        clip_model, preprocess = clip.load('ViT-B/32')
+        checkpoint = torch.load(os.path.join(directory,"PubMedCLIP_ViT32.pth"),weights_only=True)
+        clip_model.load_state_dict(checkpoint['state_dict'])
+        clip_model.eval()
+
+    elif(clip_model_pretrained == 'PMCCLIP'):
+        # Check for files in the directory and download if necessary
+        for filename, url in pmcclip_files.items():
+            filepath = os.path.join(directory, filename)
+            if not os.path.exists(filepath):
+                print(f"{filename} not found in {directory}. Downloading...")
+                download_file(url, filepath)
+            else:
+                print(f"{filename} already exists in {directory}.")
+
+        image_encoder = ModifiedResNet(layers=[3,4,6,3], output_dim=768, heads=8, image_size=224, width=64)
+        image_encoder.load_state_dict(torch.load(os.path.join(directory,'image_encoder(resnet50).pth'),weights_only=True))
+
+        # Load Text Encoder
+        text_encoder = AutoModel.from_pretrained('microsoft/BiomedNLP-BiomedBERT-base-uncased-abstract')
+        text_encoder.load_state_dict(torch.load(os.path.join(directory,'text_encoder.pth'),weights_only=True))
+
+        # Load Text Proj Layer
+
+        text_projection_layer = torch.load(os.path.join(directory,'text_projection_layer.pth'),weights_only=True)
+        text_projection_layer = nn.Parameter(text_projection_layer)
+
+        # Device
+        device = 'cuda' if torch.cuda.is_available() else 'cpu'
+        image_encoder = image_encoder.to(device).eval()
+        text_encoder = text_encoder.to(device).eval()
+        text_projection_layer = text_projection_layer.to(device)
+
+        clip_model = PMCCLIP(image_encoder, text_encoder, text_projection_layer).to(device).eval()
+        preprocess = image_transform(image_size=224)
 
     elif(clip_model_pretrained == 'BiomedCLIP'):
 
@@ -90,13 +201,15 @@ def main():
     template = ['a photo of a {}.']
 
     # Textual features
-    if(clip_model_pretrained == 'CLIP'):
-        print("Getting textual features as CLIP's classifier.")
+    print(f"Getting textual features as {clip_model_pretrained}'s classifier.")
+    if(clip_model_pretrained in ['CLIP', 'PubMedCLIP']):
         clip_weights = clip_classifier(
             dataset.classnames, template, clip_model)
     elif(clip_model_pretrained == 'BiomedCLIP'):
-        print("Getting textual features as BiomedCLIP's classifier.")
         clip_weights = biomedclip_classifier(
+            dataset.classnames, template, clip_model)
+    elif(clip_model_pretrained == 'PMCCLIP'):
+        clip_weights = pmcclip_classifier(
             dataset.classnames, template, clip_model)
 
     # Pre-load test features

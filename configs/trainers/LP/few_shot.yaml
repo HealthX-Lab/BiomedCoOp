@@ -6,9 +6,9 @@ output_dir: './results'
 method: 'LinearProbe' 
 shots: 1
 tasks: 3
-backbone: 'ViT-B/16' # 'Vit-B/16' 'Vit-B/32' 'Vit-L/16' 'Vit-L/32'
+backbone: 'ViT-B/16' # 'Vit-B/16' 'Vit-B/32'
 load_pre_feat: False # Set to True after first run
-clip_model: "BiomedCLIP" # 'BiomedCLIP' 'CLIP'
+clip_model: "BiomedCLIP" # 'BiomedCLIP' 'CLIP' 'PubMedCLIP'
 
 
 # ------ Hyper Parameters ------

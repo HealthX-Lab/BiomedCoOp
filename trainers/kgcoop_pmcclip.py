@@ -276,15 +276,15 @@ class KgCoOp_PMCCLIP(TrainerX):
 
         print(f"Loading PMC-CLIP (backbone: RN50)")
         image_encoder = ModifiedResNet(layers=[3,4,6,3], output_dim=768, heads=8, image_size=224, width=64)
-        image_encoder.load_state_dict(torch.load(os.path.join(directory,'image_encoder(resnet50).pth')))
+        image_encoder.load_state_dict(torch.load(os.path.join(directory,'image_encoder(resnet50).pth'), weights_only=True))
 
         # Load Text Encoder
         text_encoder = AutoModel.from_pretrained('microsoft/BiomedNLP-BiomedBERT-base-uncased-abstract')
-        text_encoder.load_state_dict(torch.load(os.path.join(directory,'text_encoder.pth')))
+        text_encoder.load_state_dict(torch.load(os.path.join(directory,'text_encoder.pth'), weights_only=True))
 
         # Load Text Proj Layer
 
-        text_projection_layer = torch.load(os.path.join(directory,'text_projection_layer.pth'))
+        text_projection_layer = torch.load(os.path.join(directory,'text_projection_layer.pth'), weights_only=True)
         text_projection_layer = nn.Parameter(text_projection_layer)
 
         # Device

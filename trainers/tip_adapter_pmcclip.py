@@ -7,10 +7,10 @@ import numpy as np
 
 from tqdm import tqdm
 from .method import FSCLIPmethod
-from .utils import build_cache_model, search_hp_tip, cls_acc
+from .utils import build_cache_model, search_hp_tip_biomedclip, cls_acc
 
 
-class TIPAdapter_CLIP(FSCLIPmethod):
+class TIPAdapter_PMCCLIP(FSCLIPmethod):
     '''
     TIP Adapter and Tip-Adapter-F methods
     '''
@@ -59,15 +59,15 @@ class TIPAdapter_CLIP(FSCLIPmethod):
 
         start_time = time.time()
         if not self.finetune:
-            # Zero-shot CLIP
-            clip_logits = 100. * val_features @ text_weights
+            # Zero-shot BiomedCLIP
+            clip_logits = 85.2323 * val_features @ text_weights
             acc = cls_acc(clip_logits, val_labels)
-            print("\n**** Zero-shot CLIP's val accuracy: {:.2f}. ****\n".format(acc))
+            print("\n**** Zero-shot BiomedCLIP's val accuracy: {:.2f}. ****\n".format(acc))
 
             # Tip-Adapter
             
             affinity = val_features @ cache_keys
-            cache_logits = ((-1) * (beta - beta * affinity)).exp() @ cache_values
+            cache_logits = ((-1) * (beta - beta * affinity.float())).exp() @ cache_values.float()
             # cache_logits = beta * affinity @ cache_values
             
             tip_logits = clip_logits + cache_logits * alpha
@@ -75,16 +75,16 @@ class TIPAdapter_CLIP(FSCLIPmethod):
             print("**** Tip-Adapter's val accuracy: {:.2f}. ****\n".format(acc))
 
             # Search Hyperparameters
-            best_beta, best_alpha = search_hp_tip(self.cfg, cache_keys, cache_values, val_features, val_labels, text_weights)
+            best_beta, best_alpha = search_hp_tip_biomedclip(self.cfg, cache_keys, cache_values, val_features, val_labels, text_weights)
             
-            # Zero-shot CLIP
-            clip_logits = 100. * test_features @ text_weights
+            # Zero-shot BiomedCLIP
+            clip_logits = 85.2323 * test_features @ text_weights
             acc = cls_acc(clip_logits, test_labels)
-            print("\n**** Zero-shot CLIP's test accuracy: {:.2f}. ****\n".format(acc))
+            print("\n**** Zero-shot BiomedCLIP's test accuracy: {:.2f}. ****\n".format(acc))
 
             # Tip-Adapter    
             affinity = test_features @ cache_keys
-            cache_logits = ((-1) * (best_beta - best_beta * affinity)).exp() @ cache_values
+            cache_logits = ((-1) * (best_beta - best_beta * affinity.float())).exp() @ cache_values.float()
             
             tip_logits = clip_logits + cache_logits * best_alpha
             acc = cls_acc(tip_logits, test_labels)
@@ -93,7 +93,7 @@ class TIPAdapter_CLIP(FSCLIPmethod):
             return None, acc
         
         # Enable the cached keys to be learnable
-        adapter = nn.Linear(cache_keys.shape[0], cache_keys.shape[1], bias=False).to(model.dtype).cuda()
+        adapter = nn.Linear(cache_keys.shape[0], cache_keys.shape[1], bias=False).to(torch.float32).cuda()
         adapter.weight = nn.Parameter(cache_keys.t())
         
         optimizer = torch.optim.AdamW(adapter.parameters(), lr=self.cfg['lr'], eps=1e-4)
@@ -107,8 +107,8 @@ class TIPAdapter_CLIP(FSCLIPmethod):
             for init_alpha in range(self.cfg['init_alpha_scale']):
                 init_adapter = self.search_init_hp(init_alpha, beta, train_loader, model, cache_keys, cache_values, text_weights)
                 affinity = init_adapter(val_features)
-                cache_logits = ((-1) * (beta - beta * affinity)).exp() @ cache_values
-                clip_logits = 100. * val_features @ text_weights
+                cache_logits = ((-1) * (beta - beta * affinity.float())).exp() @ cache_values.float()
+                clip_logits = 85.2323 * val_features @ text_weights
                 tip_logits = clip_logits + cache_logits * init_alpha
                 acc = cls_acc(tip_logits, val_labels)
                 if acc > best_acc:
@@ -136,8 +136,8 @@ class TIPAdapter_CLIP(FSCLIPmethod):
                     image_features = model.encode_image(images)
                     image_features /= image_features.norm(dim=-1, keepdim=True)
                 affinity = adapter(image_features)
-                cache_logits = ((-1) * (beta - beta * affinity)).exp() @ cache_values
-                clip_logits = 100. * image_features @ text_weights
+                cache_logits = ((-1) * (beta - beta * affinity.float())).exp() @ cache_values.float()
+                clip_logits = 85.2323 * image_features @ text_weights
                 tip_logits = clip_logits + cache_logits * alpha
 
                 loss = F.cross_entropy(tip_logits, target)
@@ -160,8 +160,8 @@ class TIPAdapter_CLIP(FSCLIPmethod):
             adapter.eval()
 
             affinity = adapter(val_features)
-            cache_logits = ((-1) * (beta - beta * affinity)).exp() @ cache_values
-            clip_logits = 100. * val_features @ text_weights
+            cache_logits = ((-1) * (beta - beta * affinity.float())).exp() @ cache_values.float()
+            clip_logits = 85.2323 * val_features @ text_weights
             tip_logits = clip_logits + cache_logits * alpha
             acc = cls_acc(tip_logits, val_labels)
 
@@ -171,25 +171,25 @@ class TIPAdapter_CLIP(FSCLIPmethod):
                 best_epoch = train_idx
                 torch.save(adapter.weight, self.cfg['cache_dir'] + "/best_F_" + str(self.cfg['shots']) + "shots.pt")
         
-        adapter.weight = torch.load(self.cfg['cache_dir'] + "/best_F_" + str(self.cfg['shots']) + "shots.pt")
+        adapter.weight = torch.load(self.cfg['cache_dir'] + "/best_F_" + str(self.cfg['shots']) + "shots.pt", weights_only=True)
         print(f"**** After fine-tuning, Tip-Adapter-F's best test accuracy: {best_acc:.2f}, at epoch: {best_epoch}. ****\n")
 
         """
         affinity = adapter(test_features)
         cache_logits = ((-1) * (beta - beta * affinity)).exp() @ cache_values
-        clip_logits = 100. * test_features @ text_weights
+        clip_logits = 85.2323 * test_features @ text_weights
         tip_logits = clip_logits + cache_logits * alpha
         acc = cls_acc(tip_logits, test_labels)
         print("**** Tip-Adapter-F's test accuracy before search : {:.2f}. ****\n".format(acc))
         """
         print("Total time = {:.4f}".format(time.time()-start_time))
         # Search Hyperparameters
-        best_beta, best_alpha = search_hp_tip(self.cfg, affinity, cache_values, val_features, val_labels, text_weights, adapter=adapter)
+        best_beta, best_alpha = search_hp_tip_biomedclip(self.cfg, affinity, cache_values, val_features, val_labels, text_weights, adapter=adapter)
         print("\n-------- Evaluating on the test set. --------")
         
         affinity = adapter(test_features)
-        cache_logits = ((-1) * (best_beta - best_beta * affinity)).exp() @ cache_values
-        clip_logits = 100. * test_features @ text_weights
+        cache_logits = ((-1) * (best_beta - best_beta * affinity.float())).exp() @ cache_values.float()
+        clip_logits = 85.2323 * test_features @ text_weights
         tip_logits = clip_logits + cache_logits * best_alpha
         acc = cls_acc(tip_logits, test_labels)
         print("**** Tip-Adapter-F's test accuracy after search: {:.2f}. ****\n".format(acc))
@@ -197,7 +197,7 @@ class TIPAdapter_CLIP(FSCLIPmethod):
         return loss, acc
 
     def search_init_hp(self, alpha, beta, val_loader, model, cache_keys, cache_values, text_weights):
-        adapter = nn.Linear(cache_keys.shape[0], cache_keys.shape[1], bias=False).to(model.dtype).cuda()
+        adapter = nn.Linear(cache_keys.shape[0], cache_keys.shape[1], bias=False).to(torch.float32).cuda()
         adapter.weight = nn.Parameter(cache_keys.t())
         
         optimizer = torch.optim.AdamW(adapter.parameters(), lr=self.cfg['lr'], eps=1e-4)
@@ -217,8 +217,8 @@ class TIPAdapter_CLIP(FSCLIPmethod):
                     image_features /= image_features.norm(dim=-1, keepdim=True)
 
                 affinity = adapter(image_features)
-                cache_logits = ((-1) * (beta - beta * affinity)).exp() @ cache_values
-                clip_logits = 100. * image_features @ text_weights
+                cache_logits = ((-1) * (beta - beta * affinity.float())).exp() @ cache_values.float()
+                clip_logits = 85.2323 * image_features @ text_weights
                 tip_logits = clip_logits + cache_logits * alpha
                 acc = cls_acc(tip_logits, target)
                 loss = F.cross_entropy(tip_logits, target)

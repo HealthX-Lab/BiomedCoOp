@@ -59,10 +59,10 @@ def load_clip_to_cpu(cfg):
         state_dict = None
 
     except RuntimeError:
-        state_dict = torch.load(model_path, map_location="cpu")
+        state_dict = torch.load(model_path, map_location="cpu", weights_only=True)
 
     model = clip.build_model(state_dict or model.state_dict())
-    checkpoint = torch.load(os.path.join(directory,"PubMedCLIP_ViT32.pth"))
+    checkpoint = torch.load(os.path.join(directory,"PubMedCLIP_ViT32.pth"), weights_only=True)
     model.load_state_dict(checkpoint['state_dict'])
 
     return model
