@@ -26,18 +26,18 @@
 
 ## :ballot_box_with_check: Supported Methods
 
-| Method                    | Paper                                         |                             Configs                             |          Training Scripts          |
-|---------------------------|:----------------------------------------------|:---------------------------------------------------------------:|:----------------------------------:|
-| BiomedCoOp                     | [TBA](https://arxiv.org/abs/2411.15232)                                     | [link](configs/trainers/BiomedCoOp)  |       [link](scripts/biomedcoop)        |
-| CLIP                     | [ICML 2021](https://arxiv.org/abs/2103.00020)                                     | [link](configs/trainers/Zeroshot)  |       [link](scripts/zeroshot)        |
-| CoOp                      | [IJCV 2022](https://arxiv.org/abs/2109.01134) |                  [link](configs/trainers/CoOp)                  |        [link](scripts/coop)        |
-| CoCoOp                   | [CVPR 2022](https://arxiv.org/abs/2203.05557) |                 [link](configs/trainers/CoCoOp)                 |       [link](scripts/cocoop)       |
-| KgCoOp     | [CVPR 2023](https://arxiv.org/abs/2303.13283)                                            |    [link](configs/trainers/KgCoOp)    |        [link](scripts/kgcoop)         |
-| ProGrad     | [ICCV 2023](https://arxiv.org/abs/2205.14865)                                            |    [link](configs/trainers/ProGrad)    |        [link](scripts/prograd)         |
-| CLIP-Adapter    | [IJCV 2024](https://arxiv.org/abs/2110.04544)                                            |    [link](configs/trainers/CLIP_Adapter)    |        [link](scripts/clip_adapter)         |
-| Tip-Adapter    | [ECCV 2022](https://arxiv.org/abs/2111.03930)                                            |    [link](configs/trainers/TiP_Adapter)    |        [link](scripts/tip_adapter)         |
-| LP   | [ICML 2021](https://arxiv.org/abs/2103.00020)                                            |    [link](configs/trainers/LP)    |        [link](scripts/linear_probe)         |
-| LP++   | [CVPR 2024](https://arxiv.org/abs/2404.02285)                                            |    [link](configs/trainers/LP2)    |        [link](scripts/linear_probe2)         |
+| Method                    | Paper                                         |                             Configs                             |          Training Scripts          | Trainers   |
+|---------------------------|:----------------------------------------------|:---------------------------------------------------------------:|:----------------------------------:|:----------:|
+| BiomedCoOp                 | [TBA](https://arxiv.org/abs/2411.15232)       | [link](configs/trainers/BiomedCoOp)                             | [link](scripts/biomedcoop)        | [link](trainers/BiomedCoOp) |
+| CLIP                       | [ICML 2021](https://arxiv.org/abs/2103.00020) | [link](configs/trainers/Zeroshot)                               | [link](scripts/zeroshot)          | [link](trainers/Zeroshot)        |
+| CoOp                        | [IJCV 2022](https://arxiv.org/abs/2109.01134) | [link](configs/trainers/CoOp)                                   | [link](scripts/coop)             | [link](trainers/CoOp)        |
+| CoCoOp                      | [CVPR 2022](https://arxiv.org/abs/2203.05557) | [link](configs/trainers/CoCoOp)                                 | [link](scripts/cocoop)           | [link](trainers/CoCoOp)      |
+| KgCoOp                      | [CVPR 2023](https://arxiv.org/abs/2303.13283) | [link](configs/trainers/KgCoOp)                                 | [link](scripts/kgcoop)           | [link](trainers/KgCoOp)      |
+| ProGrad                     | [ICCV 2023](https://arxiv.org/abs/2205.14865) | [link](configs/trainers/ProGrad)                                | [link](scripts/prograd)          | [link](trainers/ProGrad)     |
+| CLIP-Adapter                | [IJCV 2024](https://arxiv.org/abs/2110.04544) | [link](configs/trainers/CLIP_Adapter)                            | [link](scripts/clip_adapter)     | [link](trainers/ClipAdapter)|
+| Tip-Adapter                 | [ECCV 2022](https://arxiv.org/abs/2111.03930) | [link](configs/trainers/TiP_Adapter)                             | [link](scripts/tip_adapter)      | [link](trainers/TipAdapter) |
+| LP                          | [ICML 2021](https://arxiv.org/abs/2103.00020) | [link](configs/trainers/LP)                                     | [link](scripts/linear_probe)     | [link](trainers/LP)          |
+| LP++                        | [CVPR 2024](https://arxiv.org/abs/2404.02285) | [link](configs/trainers/LP2)                                    | [link](scripts/linear_probe2)    | [link](trainers/LP2)         |
 
 <hr />
 
