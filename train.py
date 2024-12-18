@@ -18,27 +18,27 @@ import datasets.kneexray
 import datasets.dermamnist 
 import datasets.octmnist
 
-import trainers.zeroshot
-import trainers.coop_clip
-import trainers.coop_biomedclip
-import trainers.coop_pubmedclip
-import trainers.coop_pmcclip
-import trainers.cocoop_clip
-import trainers.cocoop_biomedclip
-import trainers.cocoop_pubmedclip
-import trainers.cocoop_pmcclip
-import trainers.kgcoop_clip
-import trainers.kgcoop_biomedclip
-import trainers.kgcoop_pubmedclip
-import trainers.kgcoop_pmcclip
-import trainers.prograd_clip
-import trainers.prograd_biomedclip
-import trainers.prograd_pubmedclip
-import trainers.prograd_pmcclip
-import trainers.biomedcoop_clip
-import trainers.biomedcoop_biomedclip
-import trainers.biomedcoop_pubmedclip
-import trainers.biomedcoop_pmcclip
+import trainers.Zeroshot.zeroshot
+import trainers.CoOp.coop_clip
+import trainers.CoOp.coop_biomedclip
+import trainers.CoOp.coop_pubmedclip
+import trainers.CoOp.coop_pmcclip
+import trainers.CoCoOp.cocoop_clip
+import trainers.CoCoOp.cocoop_biomedclip
+import trainers.CoCoOp.cocoop_pubmedclip
+import trainers.CoCoOp.cocoop_pmcclip
+import trainers.KgCoOp.kgcoop_clip
+import trainers.KgCoOp.kgcoop_biomedclip
+import trainers.KgCoOp.kgcoop_pubmedclip
+import trainers.KgCoOp.kgcoop_pmcclip
+import trainers.ProGrad.prograd_clip
+import trainers.ProGrad.prograd_biomedclip
+import trainers.ProGrad.prograd_pubmedclip
+import trainers.ProGrad.prograd_pmcclip
+import trainers.BiomedCoOp.biomedcoop_clip
+import trainers.BiomedCoOp.biomedcoop_biomedclip
+import trainers.BiomedCoOp.biomedcoop_pubmedclip
+import trainers.BiomedCoOp.biomedcoop_pmcclip
 
 
 def print_args(args, cfg):

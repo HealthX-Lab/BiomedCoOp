@@ -57,9 +57,9 @@ The above steps can be repeated for other individual datasets.
 # CLIP Models include [CLIP, PubMedCLIP, PMCCLIP, BiomedCLIP]
 
 # trains and evaluates on base and novel classes
-CUDA_VISIBLE_DEVICES=<GPU number> bash scripts/biomedcoop/few_shot.sh <data directory> <dataset> <clip model to use>
+CUDA_VISIBLE_DEVICES=<GPU number> bash scripts/biomedcoop/base2new.sh <data directory> <dataset> <clip model to use>
 # Example on BTMRI using the BiomedCLIP model on GPU 0
-CUDA_VISIBLE_DEVICES=0 bash scripts/biomedcoop/few_shot.sh data btmri BiomedCLIP
+CUDA_VISIBLE_DEVICES=0 bash scripts/biomedcoop/base2new.sh data btmri BiomedCLIP
 ```
 
 #### Averaging results over 3 seeds: 
