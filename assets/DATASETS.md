@@ -11,6 +11,7 @@ data/
 |–– CTKidney/
 |–– DermaMNIST/
 |–– KneeXray/
+|–– Kvasir/
 |–– LungColon/
 |–– OCTMNIST/
 |–– RETINA/
