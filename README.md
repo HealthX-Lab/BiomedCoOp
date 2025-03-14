@@ -5,7 +5,7 @@
 
 [![paper](https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg)](https://arxiv.org/abs/2411.15232)
 [![Overview](https://img.shields.io/badge/Overview-Read-blue.svg)](#overview)
-[![Datasets](https://img.shields.io/badge/Datasets-Access-yellow.svg)](assets/DATASETS.md)
+[![Datasets](https://img.shields.io/badge/Datasets-Access-yellow.svg)](https://huggingface.co/datasets/TahaKoleilat/BiomedCoOp)
 [![BibTeX](https://img.shields.io/badge/BibTeX-Cite-blueviolet.svg)](#citation)
 
 ## Overview
