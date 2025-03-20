@@ -96,6 +96,28 @@ python parse_test_res.py output/base2new/test_new/btmri/shots_16/BiomedCoOp_Biom
 
 The above steps can be repeated for other individual datasets.
 
+#### Reproducing Results
+
+Our trained model checkpoints can be found on HuggingFace [here](https://huggingface.co/TahaKoleilat/BiomedCoOp)
+
+Run the following scripts to use the checkpoints and get testing results. Note that the following scripts automatically download the desired model weights:
+
+##### (1) Few-shot Evaluation
+
+```bash
+CUDA_VISIBLE_DEVICES=<GPU number> bash scripts/biomedcoop/eval_fewshot.sh <data directory> <dataset> <nb of shots>
+# Example on BTMRI using 16 shots and the BiomedCLIP model on GPU 0
+CUDA_VISIBLE_DEVICES=0 bash scripts/biomedcoop/eval_fewshot.sh data btmri 16
+```
+
+##### (2) Base-to-Novel Generalization
+
+```bash
+CUDA_VISIBLE_DEVICES=<GPU number> bash scripts/biomedcoop/eval_base2new.sh <data directory> <dataset> <nb of shots>
+# Example on BTMRI using 16 shots and the BiomedCLIP model on GPU 0
+CUDA_VISIBLE_DEVICES=0 bash scripts/biomedcoop/eval_base2new.sh data btmri 16
+```
+
 #### Training and Evaluating other techniques
 
 For other techniques, we provide their corresponding configs and scripts as follows.

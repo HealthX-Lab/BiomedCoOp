@@ -6,7 +6,6 @@ DATASET=$2
 MODEL=$3
 METHOD=BiomedCoOp
 TRAINER=BiomedCoOp_${MODEL}
-CFG=vit_b16_base2new
 
 SHOTS=16
 LOADEP=50

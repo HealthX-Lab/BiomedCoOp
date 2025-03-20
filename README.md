@@ -6,6 +6,7 @@
 [![paper](https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg)](https://arxiv.org/abs/2411.15232)
 [![Overview](https://img.shields.io/badge/Overview-Read-blue.svg)](#overview)
 [![Datasets](https://img.shields.io/badge/Datasets-Access-yellow.svg)](https://huggingface.co/datasets/TahaKoleilat/BiomedCoOp)
+[![Models](https://img.shields.io/badge/Models-Reproduce-orange.svg)](https://huggingface.co/TahaKoleilat/BiomedCoOp)
 [![BibTeX](https://img.shields.io/badge/BibTeX-Cite-blueviolet.svg)](#citation)
 
 ## Overview
@@ -65,6 +66,11 @@ Results reported below show accuracy for few-shot scenarios as well as base and 
 | [KgCoOp](https://arxiv.org/abs/2303.13283)                |   68.36   |   64.08    |   64.61   |  
 | [ProGrad](https://arxiv.org/abs/2205.14865)               |   71.67   |   66.93    |   67.43   |  
 | [**BiomedCoOp (ours)**](https://arxiv.org/abs/2411.15232) |   **76.26**   | **73.92**  | **75.07** |  
+
+## Model Checkpoints and Logs
+| Name                                                      | Few-Shot | Base-to-Novel |  
+|-----------------------------------------------------------|:---------:|:----------:| 
+| [**BiomedCoOp**](https://github.com/HealthX-Lab/BiomedCoOp/blob/main/trainers/BiomedCoOp/biomedcoop_biomedclip.py) |  [link](https://huggingface.co/TahaKoleilat/BiomedCoOp/tree/main/few_shot)  | [link](https://huggingface.co/TahaKoleilat/BiomedCoOp/tree/main/base2new) |
 
 ## Installation 
 For installation and other package requirements, please follow the instructions detailed in [INSTALL.md](assets/INSTALL.md). 
