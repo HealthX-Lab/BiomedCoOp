@@ -17,7 +17,7 @@ pip install torch==2.0.1 torchvision==0.15.2 --index-url https://download.pytorc
 
 * Clone BiomedCoOp code repository and install requirements
 ```bash
-# Clone MaPLe code base
+# Clone BiomedCoOp code base
 git clone https://github.com/HealthX-Lab/BiomedCoOp
 
 cd BiomedCoOp/
