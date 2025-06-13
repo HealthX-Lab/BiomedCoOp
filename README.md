@@ -86,11 +86,12 @@ Please refer to the [RUN.md](assets/RUN.md) for detailed instructions on trainin
 ## Citation
 If you use our work, please consider citing:
 ```bibtex
-@article{koleilat2024biomedcoop,
-        title={BiomedCoOp: Learning to Prompt for Biomedical Vision-Language Models},
-        author={Koleilat, Taha and Asgariandehkordi, Hojat and Rivaz, Hassan and Xiao, Yiming},
-        journal={arXiv preprint arXiv:2411.15232},
-        year={2024}
+@inproceedings{koleilat2025biomedcoop,
+  title={Biomedcoop: Learning to prompt for biomedical vision-language models},
+  author={Koleilat, Taha and Asgariandehkordi, Hojat and Rivaz, Hassan and Xiao, Yiming},
+  booktitle={Proceedings of the Computer Vision and Pattern Recognition Conference},
+  pages={14766--14776},
+  year={2025}
 }
 ```
 
